@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>BlackMamba</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="description" content="J8Rocks Game">
+<meta name="keywords" content="">
+<meta name="author" content="J8R">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117783532-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-117783532-1');
+</script>
+</head>
+<body>
+<h2 align= "center" style="width:auto">Multiplayer Snake</h2>
+<p align= "center" style="width:auto">For controlling first snake P1 should use W,A,S,D keys</p>
+<p align= "center" style="width:auto">For controlling second snake P2 should use arrow keys</p>
+<p align= "center" style="width:auto">If you need a coffee break just press space bar</p>
+<table align = "center" style="width:50%">
+ <tr>
+  	<th>Player</th>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Score</th>
+  </tr>
+  <tr>
+  	<td align= "center">P1</td>
+    <td align= "center">p1name</td>
+    <td align= "center">p1lastname</td>
+    <td id = "s" onclick = "myFunction()" align= "center">0</td>
+  </tr>
+  <tr>
+  	<td align= "center">P2</td>
+    <td align= "center">p2name</td>
+    <td align= "center">p2lastname</td>
+    <td id = "x" onclick = "scoreupdate()" align= "center">0</td>
+  </tr>
+  
+  
+</table> <br>
+<script>
+function myFunction() {
+    document.getElementById("s").innerHTML =  snake.maxCells;
+	}
+</script>
+
+<script>
+function scoreupdate() {
+    document.getElementById("x").innerHTML =  snake2.maxCells;
+	}
+</script>
+
+<div align = "center" class = "canvas">
+<canvas width="400" height="400" id="game"></canvas>
+</div>
+
+<script src="js/multiplayergame.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+table, th, td,p,h2 {
+    border: 1px solid yellow;
+    font-family: sans-serif;
+	font-size: 1em;
+    background-color: #893AA4;
+    color: yellow;
+}
+body {
+background-color:black;
+}
+canvas 
+{
+border: 2px solid yellow;
+display:flex;
+flex-flow: row wrap;
+}
